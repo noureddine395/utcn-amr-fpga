@@ -1,0 +1,29 @@
+FILTERS=32  (BN-order fix + TCN residual ReLU fix v2 applied)
+Overall Accuracy : 0.6336  (63.36%)
+Weighted F1      : 0.6557
+
+              precision    recall  f1-score   support
+
+        8PSK       0.87      0.57      0.69      2000
+      AM-DSB       0.57      0.76      0.65      2000
+      AM-SSB       0.27      0.94      0.42      2000
+        BPSK       0.90      0.65      0.75      2000
+       CPFSK       0.80      0.65      0.72      2000
+        GFSK       0.81      0.67      0.74      2000
+        PAM4       0.90      0.70      0.78      2000
+       QAM16       0.75      0.61      0.67      2000
+       QAM64       0.87      0.64      0.74      2000
+        QPSK       0.90      0.55      0.69      2000
+        WBFM       0.83      0.23      0.37      2000
+
+    accuracy                           0.63     22000
+   macro avg       0.77      0.63      0.66     22000
+weighted avg       0.77      0.63      0.66     22000
+
+Per-SNR accuracy:
+  SNR  -20..-10 dB : 0.1143  (n=5425)
+  SNR  -10..  0 dB : 0.5711  (n=5503)
+  SNR    0.. 10 dB : 0.9087  (n=5479)
+  SNR   10.. 20 dB : 0.9294  (n=5593)
+
+Params: 0.0270 M  (26,991)

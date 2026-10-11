@@ -1,0 +1,18 @@
+-- out_b  depth=11 x 16-bit
+WIDTH=16;
+DEPTH=11;
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+CONTENT BEGIN
+  0 : 0025;
+  1 : FDE1;
+  2 : 02CD;
+  3 : 0034;
+  4 : FFF5;
+  5 : FFF4;
+  6 : FF42;
+  7 : 010B;
+  8 : 0066;
+  9 : 0073;
+  10 : FE23;
+END;

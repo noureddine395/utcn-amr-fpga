@@ -1,0 +1,11 @@
+-- se_fc1_b  depth=4 x 16-bit
+WIDTH=16;
+DEPTH=4;
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+CONTENT BEGIN
+  0 : FFA8;
+  1 : 01BC;
+  2 : FFDD;
+  3 : 00B9;
+END;

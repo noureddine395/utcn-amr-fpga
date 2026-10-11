@@ -1,0 +1,208 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY uart_top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name VERILOG_INPUT_VERSION VERILOG_2001
+set_global_assignment -name ALLOW_REGISTER_RETIMING ON
+
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_M23 -to rst_n
+
+set_location_assignment PIN_AD21 -to uart_rx
+set_location_assignment PIN_AE15 -to uart_tx
+
+set_location_assignment PIN_G19 -to ledr[0]
+set_location_assignment PIN_F19 -to ledr[1]
+set_location_assignment PIN_E19 -to ledr[2]
+set_location_assignment PIN_F21 -to ledr[3]
+set_location_assignment PIN_F18 -to ledr[4]
+set_location_assignment PIN_E18 -to ledr[5]
+set_location_assignment PIN_J19 -to ledr[6]
+set_location_assignment PIN_H19 -to ledr[7]
+set_location_assignment PIN_J17 -to ledr[8]
+set_location_assignment PIN_G17 -to ledr[9]
+set_location_assignment PIN_J15 -to ledr[10]
+set_location_assignment PIN_H16 -to ledr[11]
+set_location_assignment PIN_J16 -to ledr[12]
+set_location_assignment PIN_H17 -to ledr[13]
+set_location_assignment PIN_F15 -to ledr[14]
+set_location_assignment PIN_G15 -to ledr[15]
+set_location_assignment PIN_G16 -to ledr[16]
+set_location_assignment PIN_H15 -to ledr[17]
+
+set_location_assignment PIN_E21 -to ledg[0]
+set_location_assignment PIN_E22 -to ledg[1]
+set_location_assignment PIN_E24 -to ledg[2]
+set_location_assignment PIN_E25 -to ledg[3]
+set_location_assignment PIN_H21 -to ledg[4]
+set_location_assignment PIN_G20 -to ledg[5]
+set_location_assignment PIN_G22 -to ledg[6]
+set_location_assignment PIN_G21 -to ledg[7]
+set_location_assignment PIN_F17 -to ledg[8]
+
+set_location_assignment PIN_G18 -to hex0[0]
+set_location_assignment PIN_F22 -to hex0[1]
+set_location_assignment PIN_E17 -to hex0[2]
+set_location_assignment PIN_L26 -to hex0[3]
+set_location_assignment PIN_L25 -to hex0[4]
+set_location_assignment PIN_J22 -to hex0[5]
+set_location_assignment PIN_H22 -to hex0[6]
+
+set_location_assignment PIN_M24 -to hex1[0]
+set_location_assignment PIN_Y22 -to hex1[1]
+set_location_assignment PIN_W21 -to hex1[2]
+set_location_assignment PIN_W22 -to hex1[3]
+set_location_assignment PIN_W25 -to hex1[4]
+set_location_assignment PIN_U23 -to hex1[5]
+set_location_assignment PIN_U24 -to hex1[6]
+
+set_location_assignment PIN_AA25 -to hex2[0]
+set_location_assignment PIN_AA26 -to hex2[1]
+set_location_assignment PIN_Y25 -to hex2[2]
+set_location_assignment PIN_W26 -to hex2[3]
+set_location_assignment PIN_Y26 -to hex2[4]
+set_location_assignment PIN_W27 -to hex2[5]
+set_location_assignment PIN_W28 -to hex2[6]
+
+set_location_assignment PIN_V21 -to hex3[0]
+set_location_assignment PIN_U21 -to hex3[1]
+set_location_assignment PIN_AB20 -to hex3[2]
+set_location_assignment PIN_AA21 -to hex3[3]
+set_location_assignment PIN_AD24 -to hex3[4]
+set_location_assignment PIN_AF23 -to hex3[5]
+set_location_assignment PIN_Y19 -to hex3[6]
+
+set_location_assignment PIN_AB19 -to hex4[0]
+set_location_assignment PIN_AA19 -to hex4[1]
+set_location_assignment PIN_AG21 -to hex4[2]
+set_location_assignment PIN_AH21 -to hex4[3]
+set_location_assignment PIN_AE19 -to hex4[4]
+set_location_assignment PIN_AF19 -to hex4[5]
+set_location_assignment PIN_AE18 -to hex4[6]
+
+set_location_assignment PIN_AD18 -to hex5[0]
+set_location_assignment PIN_AC18 -to hex5[1]
+set_location_assignment PIN_AB18 -to hex5[2]
+set_location_assignment PIN_AH19 -to hex5[3]
+set_location_assignment PIN_AG19 -to hex5[4]
+set_location_assignment PIN_AF18 -to hex5[5]
+set_location_assignment PIN_AH18 -to hex5[6]
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to rst_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_rx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_tx
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[10]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[14]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[15]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[16]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[17]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex0[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex1[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex2[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex3[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to hex3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex5[6]
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name HEX_FILE mif/se_fc2_k.hex
+set_global_assignment -name HEX_FILE mif/se_fc2_b.hex
+set_global_assignment -name HEX_FILE mif/se_fc1_k.hex
+set_global_assignment -name HEX_FILE mif/se_fc1_b.hex
+set_global_assignment -name HEX_FILE mif/out_k.hex
+set_global_assignment -name HEX_FILE mif/out_b.hex
+set_global_assignment -name HEX_FILE mif/hd_k.hex
+set_global_assignment -name HEX_FILE mif/hd_b.hex
+set_global_assignment -name HEX_FILE mif/fbn_s.hex
+set_global_assignment -name HEX_FILE mif/fbn_b.hex
+set_global_assignment -name HEX_FILE mif/cnn2_k.hex
+set_global_assignment -name HEX_FILE mif/cnn2_b.hex
+set_global_assignment -name HEX_FILE mif/cnn1_k.hex
+set_global_assignment -name HEX_FILE mif/cnn1_b.hex
+set_global_assignment -name HEX_FILE mif/b2c2_k.hex
+set_global_assignment -name HEX_FILE mif/b2c2_b.hex
+set_global_assignment -name HEX_FILE mif/b2c1_k.hex
+set_global_assignment -name HEX_FILE mif/b2c1_b.hex
+set_global_assignment -name HEX_FILE mif/b1c2_k.hex
+set_global_assignment -name HEX_FILE mif/b1c2_b.hex
+set_global_assignment -name HEX_FILE mif/b1c1_k.hex
+set_global_assignment -name HEX_FILE mif/b1c1_b.hex
+set_global_assignment -name HEX_FILE mif/b0c2_k.hex
+set_global_assignment -name VERILOG_FILE amr_tcn_de2115_v22.v
+set_global_assignment -name VERILOG_FILE uart_top.v
+set_global_assignment -name SDC_FILE amr_tcn_de2115_v22.sdc
+set_global_assignment -name POWER_USE_INPUT_FILES ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name POWER_INPUT_FILE_NAME amr_tcn_power_top.vcd -section_id amr_tcn_power_top.vcd
+set_instance_assignment -name POWER_READ_INPUT_FILE amr_tcn_power_top.vcd -to uart_top
+set_global_assignment -name POWER_REPORT_POWER_DISSIPATION ON
+set_global_assignment -name POWER_USE_DEVICE_CHARACTERISTICS MAXIMUM
+set_global_assignment -name POWER_INPUT_FILE_NAME amr_tcn_power_top.vcd -section_id amr_tcn_power_top.vcd_0
+set_instance_assignment -name POWER_READ_INPUT_FILE amr_tcn_power_top.vcd_0 -to uart_top
+set_global_assignment -name POWER_AUTO_COMPUTE_TJ OFF
+set_global_assignment -name POWER_TJ_VALUE 85
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
